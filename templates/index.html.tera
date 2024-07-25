@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="blahaj.mom" />
+    <meta name="title" content="blåhaj.mom" />
     <meta name="description" content="Simple and semi-blazingly-fast url shortener!" />
     <meta name="theme-color" content="#f5c2e7">
     <meta name="keywords" content="url shortener, url, sylvxa, sylvia, sylvie" />
@@ -15,26 +15,26 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://blahaj.mom/" />
-    <meta property="og:title" content="blahaj.mom" />
+    <meta property="og:title" content="blåhaj.mom" />
     <meta property="og:description" content="Simple and semi-blazingly-fast url shortener!" />
     <meta property="og:image" content="https://blahaj.mom/assets/logo.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:url" content="https://blahaj.mom/" />
-    <meta property="twitter:title" content="blahaj.mom" />
+    <meta property="twitter:title" content="blåhaj.mom" />
     <meta property="twitter:description" content="Simple and semi-blazingly-fast url shortener" />
     <meta property="twitter:image" content="https://blahaj.mom/assets/logo.png" />
 
     <script src="/static/js/script.js" defer></script>
 
-    <title>blahaj.mom</title>
+    <title>blåhaj.mom</title>
 </head>
 <body>
     <div class="flex">
         <div class="container">
             <div class="navbar">
-                <span>blahaj.mom</span>
+                <span>blåhaj.mom</span>
 
                 <div class="eetos">
                     <a><img src="/static/assets/blahajmom.gif"></a>
