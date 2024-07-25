@@ -1,0 +1,6 @@
+tab_spaces = 4
+max_width = 100
+reorder_imports = true
+reorder_modules = true
+use_field_init_shorthand = true
+fn_params_layout = "Compressed"
