@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="blahaj.mom" />
+    <meta name="description" content="Simple and semi-blazingly-fast url shortener!" />
+    <meta name="theme-color" content="#f5c2e7">
+    <meta name="keywords" content="url shortener, url, sylvxa, sylvia, sylvie" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blahaj.mom/" />
+    <meta property="og:title" content="blahaj.mom" />
+    <meta property="og:description" content="Simple and semi-blazingly-fast url shortener!" />
+    <meta property="og:image" content="https://blahaj.mom/assets/logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://blahaj.mom/" />
+    <meta property="twitter:title" content="blahaj.mom" />
+    <meta property="twitter:description" content="Simple and semi-blazingly-fast url shortener" />
+    <meta property="twitter:image" content="https://blahaj.mom/assets/logo.png" />
+
+    <script src="/static/js/script.js" defer></script>
+
+    <title>blahaj.mom</title>
+</head>
+<body>
+    <div class="flex">
+        <div class="container">
+            <div class="navbar">
+                <span>blahaj.mom</span>
+
+                <div class="eetos">
+                    <a><img src="/static/assets/blahajmom.gif"></a>
+                    <a href="https://sylvie.lol/"><img src="/static/assets/sylvielol.gif"></a>
+                </div>
+            </div>
+            <div class="content">
+                <form>
+                    <input placeholder="https://sylvie.lol/" type="url" class="url-input" pattern="https://.*" required>
+                    <label for="expiry-date">Expiry Date</label><br>
+                    <div class="option-bar">
+                        <input type="datetime-local" class="expiry-date" id="expiry-date" required>
+                        <button class="submit-url">Submit</button>
+                    </div>
+                </form>
+
+                <div class="rules">
+                    <span class="header-span">Limitations/Rules</span>
+                    <ul>
+                        <li>Each route has a maximum lifetime of a year.</li>
+                        <li>Only 1 route may be made per user per minute.</li>
+                        <li>URLs are randomly generated.</li>
+                        <li>Only <code>http</code> and <code>https</code> schemes are allowed.</li>
+                    </ul>
+                    <span class="subtext-span">If you would like an exception to these (ex. permanent routes, vanity urls, etc.), contact <a href="https://sylvie.lol/contact">sylvie</a>! (I'm always happy to help!)</span>
+                </div>
+
+                <ul class="generated"></ul>
+
+                <noscript>
+                    This site requires JavaScript, though alternatively you can make a JSON POST request to <code>/api/create</code>. (read <a href="/static/js/script.js">script.js</a> if you really need to!)
+                </noscript>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

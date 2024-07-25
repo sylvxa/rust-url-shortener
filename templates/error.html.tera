@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- I don't like inlining styles, but it doesn't really make sense to make a new file here. -->
+    <style>
+        html, body {
+            background-color: #11111b;
+        }
+
+        h1 {
+            text-align: center;
+            color: #cdd6f4;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>{{ error_code }} :(</title>
+</head>
+<body>
+    <h1>{{ reason }}</h1>
+    <img src="https://http.cat/{{ error_code }}" alt="{{error_code}}">
+</body>
+</html>

@@ -1,0 +1,27 @@
+[package]
+name = "rust-url-shortener"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+governor = "0.6.3"
+rand = "0.8.5"
+serde = "1.0.204"
+url = "2.5.2"
+
+[dependencies.rocket]
+version = "0.5.1"
+features = ["json"]
+
+[dependencies.sqlx]
+version = "0.7.4" # Needs to be 0.7.4 to avoid conflicts
+default-features = false
+features = ["macros", "migrate"]
+
+[dependencies.rocket_db_pools]
+version = "0.2.0"
+features = ["sqlx_sqlite"]
+
+[dependencies.rocket_dyn_templates]
+version = "0.2.0"
+features = ["tera"]

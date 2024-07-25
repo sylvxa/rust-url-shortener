@@ -1,0 +1,1 @@
+DELETE FROM routes WHERE expires < strftime('%s', 'now');

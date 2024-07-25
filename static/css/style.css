@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "VCR OSD Mono";
+    src: url("/static/fonts/VCR-OSD-Mono.eot") format("embedded-opentype"),
+    url("/static/fonts/VCR-OSD-Mono.woff") format("woff"),
+    url("/static/fonts/VCR-OSD-Mono.woff2") format("woff2"),
+    url("/static/fonts/VCR-OSD-Mono.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-rosewater: #f5e0dc;
+    --color-flamingo: #f2cdcd;
+    --color-pink: #f5c2e7;
+    --color-mauve: #cba6f7;
+    --color-red: #f38ba8;
+    --color-maroon: #eba0ac;
+    --color-peach: #fab387;
+    --color-yellow: #f9e2af;
+    --color-green: #a6e3a1;
+    --color-teal: #94e2d5;
+    --color-sky: #89dceb;
+    --color-sapphire: #74c7ec;
+    --color-blue: #89b4fa;
+    --color-lavender: #b4befe;
+    --color-text: #cdd6f4;
+    --color-subtext1: #bac2de;
+    --color-subtext0: #a6adc8;
+    --color-overlay2: #9399b2;
+    --color-overlay1: #7f849c;
+    --color-overlay0: #6c7086;
+    --color-surface2: #585b70;
+    --color-surface1: #45475a;
+    --color-surface0: #313244;
+    --color-base: #1e1e2e;
+    --color-mantle: #181825;
+    --color-crust: #11111b;
+
+    --font-family: "VCR OSD Mono", monospace;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: var(--color-crust);
+
+    font-family: var(--font-family), sans-serif;
+    color: var(--color-text);
+    font-size: 24px;
+}
+
+.flex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--color-mantle);
+    width: 60vw;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.navbar {
+    background-color: var(--color-base);
+    color: var(--color-blue);
+
+    height: 48px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.eetos {
+    float: right;
+    margin-bottom: 4px;
+}
+
+.content {
+    padding: 16px;
+}
+
+/* noscript stuff */
+noscript {
+    color: var(--color-subtext0);
+    font-size: 16px;
+}
+
+a {
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background: var(--color-crust);
+    color: var(--color-text);
+    font-family: var(--font-family), monospace;
+    padding: 4px;
+}
+
+/* option inputs */
+.option-bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+
+    gap: 8px;
+}
+
+/* url input */
+input {
+    background: var(--color-crust);
+    color: var(--color-text);
+
+    font-family: var(--font-family), monospace;
+
+    border: 0 solid;
+    outline: 0;
+
+    box-sizing: border-box;
+}
+
+input[type=url] {
+    width: 100%;
+    font-size: 48px;
+
+    padding: 8px 16px;
+
+    font-family: var(--font-family), monospace;
+}
+
+input[type=url]:invalid {
+    color: var(--color-red);
+}
+
+/* expiry input */
+input[type=datetime-local] {
+    color-scheme: dark;
+    font-size: 24px;
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    color: var(--color-subtext1);
+}
+
+::selection  {
+    color: var(--color-crust);
+    background: var(--color-blue);
+}
+
+::-moz-selection {
+    color: var(--color-crust);
+    background: var(--color-blue);
+}
+
+input::placeholder {
+    color: var(--color-subtext0);
+}
+
+/* submit button (yay!) */
+button {
+    background: var(--color-crust);
+    color: var(--color-text);
+
+    font-family: var(--font-family), monospace;
+
+    border: 0 solid;
+    outline: 0;
+
+    font-size: 20px;
+    padding: 4px 8px;
+}
+
+/* about section */
+.rules {
+    margin-top: 16px;
+    padding: 16px;
+
+    box-sizing: border-box;
+    background: var(--color-base);
+}
+
+.header-span {
+    font-size: 28px;
+}
+
+.subtext-span {
+    font-size: 16px;
+    color: var(--color-subtext0);
+}
+
+.rules ul {
+    margin-top: 8px;
+}
+
+.rules li {
+    font-size: 20px;
+    color: var(--color-subtext1);
+}
+
+/* generated urls */
+.generated {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+}

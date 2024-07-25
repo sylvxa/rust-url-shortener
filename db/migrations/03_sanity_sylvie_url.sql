@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO routes(route_id, destination, expires) VALUES("sylvie", "https://sylvie.lol/", 2147483648)
