@@ -115,7 +115,7 @@ async fn create(
         ));
     }
 
-    let current_unix_epoch = get_unix_epoch()
+    let current_unix_epoch = get_unix_epoch();
     let one_year_later = current_unix_epoch + 365 * 24 * 60 * 60 * 1000;
 
     if post.expires < current_unix_epoch {
