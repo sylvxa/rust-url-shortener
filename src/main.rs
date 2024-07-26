@@ -61,7 +61,7 @@ fn get_unix_epoch() -> i64 {
         .duration_since(UNIX_EPOCH)
         .expect("Time went backwards!");
 
-    since_the_epoch.as_secs() as i64
+    since_the_epoch.as_millis() as i64
 }
 
 fn is_valid_route_id(route_id: &str) -> bool {
@@ -115,10 +115,20 @@ async fn create(
         ));
     }
 
-    if get_unix_epoch() > post.expires {
+    let current_unix_epoch = get_unix_epoch()
+    let one_year_later = current_unix_epoch + 365 * 24 * 60 * 60 * 1000;
+
+    if post.expires < current_unix_epoch {
         return Err(Custom(
             Status::BadRequest,
             String::from("Route set to expire in the past!"),
+        ));
+    }
+
+    if post.expires > one_year_later {
+        return Err(Custom(
+            Status::BadRequest,
+            String::from("Route expiry date must be within one year from now!"),
         ));
     }
 
