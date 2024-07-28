@@ -43,7 +43,7 @@
             </div>
             <div class="content">
                 <form>
-                    <input placeholder="https://sylvie.lol/" type="url" class="url-input" pattern="https://.*" required>
+                    <input placeholder="https://sylvie.lol/" type="url" class="url-input" pattern="(http|https)://.*" required>
                     <label for="expiry-date">Expiry Date</label><br>
                     <div class="option-bar">
                         <input type="datetime-local" class="expiry-date" id="expiry-date" required>
